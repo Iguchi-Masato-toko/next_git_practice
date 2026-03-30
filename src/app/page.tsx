@@ -1,7 +1,9 @@
+import { Headding1 } from "@/module/Headding/Headding1";
+
 export default function Home() {
   return (
     <section>
-      <h1>h1タイトル</h1>
+      <Headding1>Headding1</Headding1>
     </section>
   );
 }
