@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --white: #ffffff;
   --black: #171717;
@@ -23,4 +31,26 @@ body {
   margin: 0;
   font-weight: 400;
   font-size: 1.6rem; /* = 16px */
+}
+
+.wrap {
+  width: 1200px;
+  margin-inline: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.txt {
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+
+.txt + .txt {
+  margin-top: 0.5em;
 }
