@@ -1,5 +1,6 @@
 import { Headding1 } from "@/module/Headding/Headding1";
 import { HeaddingUnderLine2 } from "@/module/Headding/Headding2";
+import { NumericList, List, ListItem } from "@/module/List/List";
 
 export default function Home() {
   return (
@@ -14,16 +15,16 @@ export default function Home() {
       <p className="txt">
         ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
       </p>
-      <ul className="numelicList">
-        <li className="item --bold">ダミーテキスト</li>
-        <li className="item">ダミーテキスト</li>
-        <li className="item">ダミーテキスト</li>
-      </ul>
-      <ul className="list">
-        <li className="item --bold">ダミーテキスト</li>
-        <li className="item">ダミーテキスト</li>
-        <li className="item">ダミーテキスト</li>
-      </ul>
+      <NumericList>
+        <ListItem param={{ bold: true }}>ダミーテキスト</ListItem>
+        <ListItem>ダミーテキスト</ListItem>
+        <ListItem>ダミーテキスト</ListItem>
+      </NumericList>
+      <List>
+        <ListItem param={{ bold: true }}>ダミーテキスト</ListItem>
+        <ListItem>ダミーテキスト</ListItem>
+        <ListItem>ダミーテキスト</ListItem>
+      </List>
     </section>
   );
 }
