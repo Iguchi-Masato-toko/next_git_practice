@@ -16,12 +16,12 @@ export default function Home() {
         ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
       </p>
       <NumericList>
-        <ListItem param={{ bold: true }}>ダミーテキスト</ListItem>
+        <ListItem param={{ modifier: ["bold"] }}>ダミーテキスト</ListItem>
         <ListItem>ダミーテキスト</ListItem>
         <ListItem>ダミーテキスト</ListItem>
       </NumericList>
       <List>
-        <ListItem param={{ bold: true }}>ダミーテキスト</ListItem>
+        <ListItem param={{ modifier: ["bold"] }}>ダミーテキスト</ListItem>
         <ListItem>ダミーテキスト</ListItem>
         <ListItem>ダミーテキスト</ListItem>
       </List>

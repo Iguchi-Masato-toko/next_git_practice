@@ -13,9 +13,10 @@ const ListItem = ({
   param,
 }: {
   children: ReactNode;
-  param?: { bold?: boolean };
+  param?: { modifier?: string[] };
 }) => {
-  const className = param?.bold ? "item --bold" : "item";
+  const modifiers = param?.modifier?.map((m) => `--${m}`).join(" ") ?? "";
+  const className = modifiers ? `item ${modifiers}` : "item";
   return <li className={className}>{children}</li>;
 };
 
