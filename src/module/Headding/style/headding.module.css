@@ -38,3 +38,32 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media (max-width: 767px) {
+  .c-heading1 {
+    font-size: 3.2rem;
+    border-left-width: 5px;
+    padding-left: 0.875rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .c-heading2 {
+    font-size: 2.4rem;
+    border-left-width: 5px;
+    padding-left: 0.875rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .c-heading2--underline {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .c-heading1,
+  .c-heading2,
+  .c-heading__txt {
+    color: var(--foreground);
+  }
+}

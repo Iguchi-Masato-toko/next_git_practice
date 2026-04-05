@@ -9,10 +9,14 @@ import {
   ListItem,
   WarningList,
   WarningListItem,
+  NoteListItem,
+  NoteList,
 } from "@/module/List/List";
 import { CodeBlock } from "@/module/CodeBlock/CodeBlock";
 
 import "./components.css";
+import { LinkBlock } from "@/module/Link/Link";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -38,11 +42,31 @@ export default function Home() {
         <p className="c-txt">
           ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
         </p>
+        <CodeBlock>
+          {`<p className="c-txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>`}
+        </CodeBlock>
+        <p className="c-txt">
+          <Link href={"/"}>ダミーテキスト</Link>
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+        <CodeBlock>
+          {`<p className="c-txt"><Link href={"/"}>ダミーテキスト</Link>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>`}
+        </CodeBlock>
         <p className="c-txt u-red u-bold">
           ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
         </p>
         <CodeBlock>
-          {`<p className="c-txt">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>\n<p className="c-txt u-red u-bold">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>`}
+          {`<p className="c-txt u-red u-bold">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>`}
+        </CodeBlock>
+      </div>
+      <div className="l-components">
+        <LinkBlock param={{ href: "#" }}>ダミーテキスト</LinkBlock>
+        <CodeBlock>
+          {`<LinkBlock param={{ href: "#" }}>ダミーテキスト</LinkBlock>`}
+        </CodeBlock>
+        <LinkBlock param={{ href: "#", blank: true }}>ダミーテキスト</LinkBlock>
+        <CodeBlock>
+          {`<LinkBlock param={{ href: "#", blank: true }}>ダミーテキスト</LinkBlock>`}
         </CodeBlock>
       </div>
       <div className="l-components">
@@ -73,6 +97,14 @@ export default function Home() {
         </WarningList>
         <CodeBlock>
           {`<WarningList>\n  <WarningListItem>ダミーテキスト</WarningListItem>\n</WarningList>`}
+        </CodeBlock>
+      </div>
+      <div>
+        <NoteList>
+          <NoteListItem>ダミーテキスト</NoteListItem>
+        </NoteList>
+        <CodeBlock>
+          {`<NoteList>\n  <NoteListItem>ダミーテキスト</NoteListItem>\n</NoteList>`}
         </CodeBlock>
       </div>
     </section>

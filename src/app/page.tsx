@@ -9,6 +9,7 @@ import {
   ListItem,
   WarningList,
   WarningListItem,
+  NoteListItem,
 } from "@/module/List/List";
 
 export default function Home() {
@@ -36,6 +37,9 @@ export default function Home() {
         <ListItem>ダミーテキスト</ListItem>
         <ListItem>ダミーテキスト</ListItem>
       </List>
+      <NoteListItem>
+        <NoteListItem>ダミーテキスト</NoteListItem>
+      </NoteListItem>
       <WarningList>
         <WarningListItem>ダミーテキスト</WarningListItem>
       </WarningList>

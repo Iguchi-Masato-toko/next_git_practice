@@ -2,11 +2,11 @@ import { ReactNode } from "react";
 import styles from "./style/list.module.css";
 
 const NumericList = ({ children }: { children: ReactNode }) => {
-  return <ul className="c-numericList">{children}</ul>;
+  return <ul className={styles["c-numericList"]}>{children}</ul>;
 };
 
 const List = ({ children }: { children: ReactNode }) => {
-  return <ul className="c-list">{children}</ul>;
+  return <ul className={styles["c-list"]}>{children}</ul>;
 };
 
 const ListItem = ({
@@ -17,7 +17,9 @@ const ListItem = ({
   param?: { modifier?: string[] };
 }) => {
   const modifiers = param?.modifier?.map((m) => `u-${m}`).join(" ") ?? "";
-  const className = modifiers ? `c-listItem ${modifiers}` : "c-listItem";
+  const className = modifiers
+    ? `${styles["c-listItem"]} ${modifiers}`
+    : styles["c-listItem"];
   return <li className={className}>{children}</li>;
 };
 
@@ -40,7 +42,7 @@ const NoteListItem = ({
   param,
 }: {
   children: ReactNode;
-  param?: { modifier?: ("small" | "indent" | "muted")[] };
+  param?: { modifier?: ("small" | "indent")[] };
 }) => {
   const baseClass = styles["c-noteList__item"];
   const modifierClasses =

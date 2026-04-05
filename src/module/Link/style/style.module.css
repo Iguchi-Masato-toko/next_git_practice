@@ -1,0 +1,35 @@
+.c-linkBlock {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-decoration: none;
+  color: #3a32de;
+  font-weight: 600;
+  transition:
+    color 0.2s,
+    transform 0.2s;
+}
+
+.c-linkBlock + .c-linkBlock {
+  margin-top: 0.5em;
+}
+
+.c-linkBlock:hover {
+  color: #8232de;
+  transform: translateX(5px);
+}
+
+.c-linkBlock::before {
+  content: "＞";
+  color: var(--black);
+  font-weight: 400;
+}
+
+/* 別ウィンドウアイコン */
+.c-link__externalIcon {
+  margin-left: 0.25em;
+  font-size: 0.85em;
+  vertical-align: text-top;
+  color: inherit;
+}

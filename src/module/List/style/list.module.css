@@ -1,3 +1,39 @@
+* .c-numericList,
+* .c-list {
+  margin-top: 2rem;
+}
+
+.c-list,
+.c-numericList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-numericList {
+  counter-reset: item-counter;
+}
+
+.c-list .c-listItem,
+.c-numericList .c-listItem {
+  position: relative;
+  display: flex;
+  margin-top: 0.5em;
+  gap: 10px;
+}
+
+.c-numericList .c-listItem {
+  counter-increment: item-counter;
+}
+
+.c-numericList .c-listItem::before {
+  content: counter(item-counter);
+}
+
+.c-list .c-listItem::before {
+  content: "・";
+}
+
 /* ==========================================================================
    component: 警告リスト (c-warningList)
    ========================================================================== */
@@ -38,8 +74,8 @@
   align-items: flex-start;
   gap: 0.25em;
   padding: 0.2em 0;
-  font-size: 0.875rem;
-  color: #555;
+  font-size: 1.4rem;
+  color: #999;
   line-height: 1.6;
 }
 
@@ -60,9 +96,4 @@
 /* インデントを加える */
 .c-noteList__item--indent {
   padding-left: 1em;
-}
-
-/* 薄いグレーで補足的に表示する */
-.c-noteList__item--muted {
-  color: #999;
 }
