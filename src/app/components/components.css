@@ -1,3 +1,41 @@
 .l-components {
   margin-bottom: 50px;
 }
+
+.c-components {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-componentsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #d0c6c6;
+}
+
+.c-componentsList__item {
+  text-align: center;
+  box-shadow: 10px 5px 4px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.c-componentsList__item:not(:last-of-type) {
+  border-bottom: 1px solid #000;
+}
+
+.c-componentsList__item:hover {
+  transform: translateX(2px) translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.c-componentsList__item > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 50px;
+}
