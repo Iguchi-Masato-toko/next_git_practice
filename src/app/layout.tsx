@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
-        <div className="c-wrap">{children}</div>
+        <div className="l-wrap">{children}</div>
       </body>
     </html>
   );
