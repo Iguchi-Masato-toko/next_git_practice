@@ -3,8 +3,8 @@ import styles from "./style/headding.module.css";
 
 const Headding2 = ({ children }: { children: ReactNode }) => {
   return (
-    <h2 className={styles.headding2}>
-      <span className={styles.headding_txt}>{children}</span>
+    <h2 className={styles["c-heading2"]}>
+      <span className={styles["c-heading__txt"]}>{children}</span>
     </h2>
   );
 };
@@ -17,11 +17,11 @@ const HeaddingUnderLine2 = ({
   param?: { class?: string };
 }) => {
   const className = param?.class
-    ? `${styles.headding2_underline} ${param.class}`
-    : styles.headding2_underline;
+    ? `${styles["c-heading2--underline"]} ${param.class}`
+    : styles["c-heading2--underline"];
   return (
     <h2 className={className}>
-      <span className={styles.headding_txt}>{children}</span>
+      <span className={styles["c-heading__txt"]}>{children}</span>
     </h2>
   );
 };
