@@ -42,8 +42,12 @@ ul {
   list-style: none;
 }
 
-.red {
+.--red {
   color: #ff0000;
+}
+
+.--bold {
+  font-weight: 700;
 }
 
 .txt {
@@ -53,4 +57,40 @@ ul {
 
 .txt + .txt {
   margin-top: 0.5em;
+}
+
+* .numelicList,
+* .list {
+  margin-top: 2rem;
+}
+
+.list,
+.numelicList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.numelicList {
+  counter-reset: item-counter;
+}
+
+.list .item,
+.numelicList .item {
+  position: relative;
+  display: flex;
+  margin-top: 0.5em;
+  gap: 10px;
+}
+
+.numelicList .item {
+  counter-increment: item-counter;
+}
+
+.numelicList .item::before {
+  content: counter(item-counter);
+}
+
+.list .item::before {
+  content: "・";
 }

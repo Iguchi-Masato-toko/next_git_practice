@@ -14,6 +14,16 @@ export default function Home() {
       <p className="txt">
         ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
       </p>
+      <ul className="numelicList">
+        <li className="item --bold">ダミーテキスト</li>
+        <li className="item">ダミーテキスト</li>
+        <li className="item">ダミーテキスト</li>
+      </ul>
+      <ul className="list">
+        <li className="item --bold">ダミーテキスト</li>
+        <li className="item">ダミーテキスト</li>
+        <li className="item">ダミーテキスト</li>
+      </ul>
     </section>
   );
 }
