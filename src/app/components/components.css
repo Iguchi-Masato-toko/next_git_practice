@@ -39,3 +39,33 @@
   display: inline-block;
   padding: 20px 50px;
 }
+
+@media (max-width: 600px) {
+  .c-components {
+    bottom: 10px;
+    left: 50%;
+    top: auto;
+    transform: translateY(0) translateX(-40%);
+  }
+  .c-componentsList {
+    /* width: 50%; */
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .c-componentsList__item {
+    border-bottom: none;
+    box-shadow: none;
+    /* padding: 10px 12px; */
+  }
+
+  .c-componentsList__item:not(:last-of-type) {
+    border-bottom: none;
+  }
+
+  .c-componentsList__item > a {
+    padding: 5px 10px;
+  }
+}

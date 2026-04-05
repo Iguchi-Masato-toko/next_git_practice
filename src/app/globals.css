@@ -48,6 +48,7 @@ body {
   }
 
   .l-wrap {
+    position: relative;
     width: 100%;
     padding-inline: 1.6rem;
   }

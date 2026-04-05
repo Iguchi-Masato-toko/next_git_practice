@@ -24,8 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <title>トップページ</title>
-      <body className="min-h-full flex flex-col">
+      <body>
         <div className="c-wrap">{children}</div>
       </body>
     </html>

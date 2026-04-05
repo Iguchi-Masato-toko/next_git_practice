@@ -14,7 +14,6 @@ import {
 } from "@/module/List/List";
 import { CodeBlock } from "@/module/CodeBlock/CodeBlock";
 
-import "./components.css";
 import { LinkBlock } from "@/module/Link/Link";
 import Link from "next/link";
 
@@ -117,19 +116,6 @@ export default function Home() {
           </CodeBlock>
         </div>
       </section>
-      <aside className="c-components">
-        <ul className="c-componentsList">
-          <li className="c-componentsList__item">
-            <a href="#Header">Header</a>
-          </li>
-          <li className="c-componentsList__item">
-            <a href="#Text">Text</a>
-          </li>
-          <li className="c-componentsList__item">
-            <a href="#List">List</a>
-          </li>
-        </ul>
-      </aside>
     </>
   );
 }
