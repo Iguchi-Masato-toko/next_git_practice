@@ -1,5 +1,8 @@
-import { Headding1 } from "@/module/Headding/Headding1";
-import { Headding2, HeaddingUnderLine2 } from "@/module/Headding/Headding2";
+import {
+  Headding1,
+  Headding2,
+  HeaddingUnderLine2,
+} from "@/module/Headding/Headding";
 import {
   NumericList,
   List,
