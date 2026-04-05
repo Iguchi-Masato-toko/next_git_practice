@@ -27,8 +27,9 @@ export default function RootLayout({
       lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <title>トップページ</title>
       <body className="min-h-full flex flex-col">
-        <div className="wrap">{children}</div>
+        <div className="c-wrap">{children}</div>
       </body>
     </html>
   );
