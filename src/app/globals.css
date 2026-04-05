@@ -33,7 +33,7 @@ body {
   font-size: 1.6rem; /* = 16px */
 }
 
-.wrap {
+.l-wrap {
   width: 1200px;
   margin-inline: auto;
 }
@@ -42,55 +42,55 @@ ul {
   list-style: none;
 }
 
-.--red {
+.u-red {
   color: #ff0000;
 }
 
-.--bold {
+.u-bold {
   font-weight: 700;
 }
 
-.txt {
+.c-txt {
   display: inline-block;
   letter-spacing: 0.05em;
 }
 
-.txt + .txt {
+.c-txt + .c-txt {
   margin-top: 0.5em;
 }
 
-* .numelicList,
-* .list {
+* .c-numericList,
+* .c-list {
   margin-top: 2rem;
 }
 
-.list,
-.numelicList {
+.c-list,
+.c-numericList {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.numelicList {
+.c-numericList {
   counter-reset: item-counter;
 }
 
-.list .item,
-.numelicList .item {
+.c-list .c-listItem,
+.c-numericList .c-listItem {
   position: relative;
   display: flex;
   margin-top: 0.5em;
   gap: 10px;
 }
 
-.numelicList .item {
+.c-numericList .c-listItem {
   counter-increment: item-counter;
 }
 
-.numelicList .item::before {
+.c-numericList .c-listItem::before {
   content: counter(item-counter);
 }
 
-.list .item::before {
+.c-list .c-listItem::before {
   content: "・";
 }
