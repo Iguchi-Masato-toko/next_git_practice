@@ -1,0 +1,68 @@
+/* ==========================================================================
+   component: 警告リスト (c-warningList)
+   ========================================================================== */
+.c-warningList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c-warningList__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+  padding: 0.4em 0;
+  line-height: 1.6;
+  color: #e53e3e;
+}
+
+/* 赤い警告アイコン */
+.c-warningList__item::before {
+  content: "⚠";
+  color: #e53e3e;
+  flex-shrink: 0;
+  font-size: 1em;
+}
+
+/* ==========================================================================
+   component: 注釈リスト (c-noteList)
+   ========================================================================== */
+.c-noteList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c-noteList__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25em;
+  padding: 0.2em 0;
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.c-noteList__item::before {
+  content: "※";
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   modifier
+   -------------------------------------------------------------------------- */
+
+/* 文字サイズを小さくする */
+.c-noteList__item--small {
+  font-size: 0.75rem;
+}
+
+/* インデントを加える */
+.c-noteList__item--indent {
+  padding-left: 1em;
+}
+
+/* 薄いグレーで補足的に表示する */
+.c-noteList__item--muted {
+  color: #999;
+}

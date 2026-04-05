@@ -1,6 +1,12 @@
 import { Headding1 } from "@/module/Headding/Headding1";
 import { HeaddingUnderLine2 } from "@/module/Headding/Headding2";
-import { NumericList, List, ListItem } from "@/module/List/List";
+import {
+  NumericList,
+  List,
+  ListItem,
+  WarningList,
+  WarningListItem,
+} from "@/module/List/List";
 
 export default function Home() {
   return (
@@ -21,10 +27,15 @@ export default function Home() {
         <ListItem>ダミーテキスト</ListItem>
       </NumericList>
       <List>
-        <ListItem param={{ modifier: ["bold"] }}>ダミーテキスト</ListItem>
+        <ListItem param={{ modifier: ["bold", "red"] }}>
+          ダミーテキスト
+        </ListItem>
         <ListItem>ダミーテキスト</ListItem>
         <ListItem>ダミーテキスト</ListItem>
       </List>
+      <WarningList>
+        <WarningListItem>ダミーテキスト</WarningListItem>
+      </WarningList>
     </section>
   );
 }
