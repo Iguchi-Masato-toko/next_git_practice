@@ -38,15 +38,11 @@ body {
 }
 
 .l-wrap {
-  width: 1200px;
+  width: 780px;
   margin-inline: auto;
 }
 
 @media (max-width: 767px) {
-  html {
-    font-size: 56.25%; /* 1rem = 9px */
-  }
-
   .l-wrap {
     position: relative;
     width: 100%;

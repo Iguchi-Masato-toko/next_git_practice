@@ -16,6 +16,7 @@ import { CodeBlock } from "@/module/CodeBlock/CodeBlock";
 
 import { LinkBlock } from "@/module/Link/Link";
 import Link from "next/link";
+import { Card } from "@/module/Card/Card";
 
 export default function Home() {
   return (
@@ -107,13 +108,18 @@ export default function Home() {
             {`<WarningList>\n  <WarningListItem>ダミーテキスト</WarningListItem>\n</WarningList>`}
           </CodeBlock>
         </div>
-        <div>
+        <div className="l-components">
           <NoteList>
             <NoteListItem>ダミーテキスト</NoteListItem>
           </NoteList>
           <CodeBlock>
             {`<NoteList>\n  <NoteListItem>ダミーテキスト</NoteListItem>\n</NoteList>`}
           </CodeBlock>
+        </div>
+      </section>
+      <section id="Card">
+        <div className="l-components">
+          <Card></Card>
         </div>
       </section>
     </>

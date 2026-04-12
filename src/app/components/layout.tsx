@@ -30,7 +30,7 @@ export default function ComponentsLayout({
         </ul>
       </aside>
       {/* children には page.tsx の内容が入る */}
-      <div>{children}</div>
+      <main>{children}</main>
     </>
   );
 }
