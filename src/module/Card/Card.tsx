@@ -42,7 +42,9 @@ const Card = () => {
               />
             </figure>
             <div className={styles["c-card__body"]}>
-              <span className={styles["c-card__category"]}>{item.category}</span>
+              <span className={styles["c-card__category"]}>
+                {item.category}
+              </span>
               <h3 className={styles["c-card__title"]}>{item.title}</h3>
               <p className={styles["c-card__text"]}>{item.text}</p>
               <time dateTime={item.date} className={styles["c-card__date"]}>
