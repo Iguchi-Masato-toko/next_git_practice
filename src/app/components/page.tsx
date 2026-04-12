@@ -118,8 +118,60 @@ export default function Home() {
         </div>
       </section>
       <section id="Card">
+        <Headding1>Card</Headding1>
         <div className="l-components">
-          <Card></Card>
+          <Card
+            cardItems={[
+              {
+                href: "/",
+                category: "社会",
+                title: "ダミータイトル",
+                text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+                date: "2024-06-01",
+              },
+              {
+                href: "/",
+                category: "社会",
+                title: "ダミータイトル",
+                text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+                date: "2024-06-01",
+              },
+              {
+                href: "/",
+                category: "社会",
+                title: "ダミータイトル",
+                text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+                date: "2024-06-01",
+              },
+            ]}
+          />
+          <CodeBlock>
+            {`<Card
+  cardItems={[
+    {
+      href: "/",
+      category: "社会",
+      title: "ダミータイトル",
+      text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+      date: "2024-06-01",
+    },
+    {
+      href: "/",
+      category: "社会",
+      title: "ダミータイトル",
+      text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+      date: "2024-06-01",
+    },
+    {
+      href: "/",
+      category: "社会",
+      title: "ダミータイトル",
+      text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
+      date: "2024-06-01",
+    },
+  ]}
+    />`}
+          </CodeBlock>
         </div>
       </section>
     </>

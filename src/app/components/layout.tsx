@@ -27,6 +27,9 @@ export default function ComponentsLayout({
           <li className="c-componentsList__item">
             <a href="#List">List</a>
           </li>
+          <li className="c-componentsList__item">
+            <a href="#Card">Card</a>
+          </li>
         </ul>
       </aside>
       {/* children には page.tsx の内容が入る */}

@@ -2,31 +2,15 @@ import Link from "next/link";
 import styles from "./style/card.module.css";
 import Image from "next/image";
 
-const cardItems = [
-  {
-    href: "/",
-    category: "社会",
-    title: "ダミータイトル",
-    text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
-    date: "2026-04-08",
-  },
-  {
-    href: "/",
-    category: "医療",
-    title: "ダミータイトル2",
-    text: "ダミーテキストダミーテキストダミーテキスト",
-    date: "2026-04-09",
-  },
-  {
-    href: "/",
-    category: "社会",
-    title: "ダミータイトル3",
-    text: "ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト",
-    date: "2026-04-10",
-  },
-];
+type CardItem = {
+  href: string;
+  category: string;
+  title: string;
+  text: string;
+  date: string;
+};
 
-const Card = () => {
+const Card = ({ cardItems }: { cardItems: CardItem[] }) => {
   return (
     <ul className={styles["c-card"]}>
       {cardItems.map((item, index) => (
@@ -42,7 +26,9 @@ const Card = () => {
               />
             </figure>
             <div className={styles["c-card__body"]}>
-              <span className={styles["c-card__category"]}>{item.category}</span>
+              <span className={styles["c-card__category"]}>
+                {item.category}
+              </span>
               <h3 className={styles["c-card__title"]}>{item.title}</h3>
               <p className={styles["c-card__text"]}>{item.text}</p>
               <time dateTime={item.date} className={styles["c-card__date"]}>
